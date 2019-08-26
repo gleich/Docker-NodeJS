@@ -1,8 +1,13 @@
 # Base Image
 FROM node:alpine
 
-# Install Dependencies:
+# Putting files in 
+WORKDIR /usr/app
+
+# Copying over files
 COPY ./ ./
+
+# Install Dependencies
 RUN npm install
 
 # Starting App
