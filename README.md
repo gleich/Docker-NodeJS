@@ -2,7 +2,7 @@
 
 ## DISCLAIMER
 
-At the time of making this, I have little to no experience with JS and NodeJS, this is more for learning how to run a web app on a docker container.
+At the time of making this, I have little to no experience with JS and NodeJS, this is more for learning how port mapping works with Docker.
 
 ## Running
 
