@@ -1,14 +1,17 @@
 # Base Image
 FROM node:alpine
 
-# Putting files in 
+# Changing directory into /usr/app
 WORKDIR /usr/app
 
-# Copying over files
-COPY ./ ./
+# Copying over package.json
+COPY ./package.json ./package.json
 
 # Install Dependencies
 RUN npm install
+
+# Copying over the rest of the files
+COPY ./ ./
 
 # Starting App
 CMD ["npm", "start"]
